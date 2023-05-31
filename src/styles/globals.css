@@ -51,3 +51,11 @@ input[type="text"] {
   background-color: #e8e8e8;
   font-size: 16px;
 }
+
+.color-button {
+  border-radius: 50%;
+}
+
+.color-button-selected {
+  border: 2px solid #89b14e;
+}

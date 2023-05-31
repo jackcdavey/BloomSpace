@@ -3,7 +3,6 @@ import { useDropzone } from 'react-dropzone';
 import axios from 'axios';
 import styles from './dropzone.module.css';
 
-const API_BASE_URL = 'https://48f7-2600-1700-5454-1640-6915-7909-b4ee-bfa4.ngrok-free.app';
 
 const ImageHandler = ({ onFileDrop, onSubmit }) => {
     const [selectedImage, setSelectedImage] = useState(null);
