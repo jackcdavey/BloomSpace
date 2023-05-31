@@ -1,5 +1,4 @@
-// pages/highlight.tsx
-
+import Navbar from './components/navbar';
 import { useState } from 'react';
 import { useRouter } from 'next/router';
 // import ColorSelector from '../components/ColorSelector';
@@ -16,6 +15,7 @@ export default function Highlight() {
 
     return (
         <div>
+            <Navbar />
             <h1>Select Your Preferred Color</h1>
             <p>Highlight your image here: Placeholder</p>
             {/* <ColorSelector selectedColor={selectedColor} setSelectedColor={setSelectedColor} /> */}

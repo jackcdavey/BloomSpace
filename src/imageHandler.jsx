@@ -2,6 +2,7 @@
 import React, { useCallback, useState } from 'react';
 import { useDropzone } from 'react-dropzone';
 import axios from 'axios';
+import styles from './Dropzone.module.css'; // Importing styles
 
 const API_BASE_URL = 'https://0bee-2600-1700-5454-1640-950b-52c6-9311-c655.ngrok-free.app';
 
@@ -12,13 +13,13 @@ const Dropzone = () => {
         try {
             const file = acceptedFiles[0];
             const formData = new FormData();
-            formData.append('image', file); // change from 'file' to 'image'
+            formData.append('image', file);
             const response = await axios.post(`${API_BASE_URL}/generate-prompt`, formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                 },
             });
-            setPrompt(response.data.result); // change from 'prompt' to 'result' to match server-side response
+            setPrompt(response.data.result);
         } catch (error) {
             console.error(error);
         }
@@ -28,8 +29,7 @@ const Dropzone = () => {
 
     return (
         <div>
-            <h1>Image Prompt Generator</h1>
-            <div {...getRootProps()}>
+            <div {...getRootProps()} className={styles.dropzone}>
                 <input {...getInputProps()} />
                 {isDragActive ? (
                     <p>Drop the image here...</p>
@@ -39,7 +39,7 @@ const Dropzone = () => {
             </div>
 
             {prompt && (
-                <div>
+                <div className={styles.prompt}>
                     <h2>Prompt:</h2>
                     <p>{prompt}</p>
                 </div>

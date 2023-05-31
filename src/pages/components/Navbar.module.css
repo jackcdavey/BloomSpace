@@ -1,0 +1,18 @@
+.navbar {
+    background-color: #89b14e;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2em;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.title {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 2em;
+    font-family: 'Pacifico', cursive;
+}

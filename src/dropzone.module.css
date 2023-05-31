@@ -1,0 +1,27 @@
+/* styles/Dropzone.module.css */
+
+.dropzone {
+    border: 2px dashed #89b14e;
+    border-radius: 5px;
+    padding: 20px;
+    width: 80%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 1.2em;
+    cursor: pointer;
+    color: #36454F;
+}
+
+.dropzone:hover {
+    background-color: #f0f8ff;
+}
+
+.prompt {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.5em;
+    color: #36454F;
+}

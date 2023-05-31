@@ -1,0 +1,25 @@
+/* styles/PlantSuggestions.css */
+
+.suggestionsContainer {
+    width: 100%;
+    /* background-color: red; */
+}
+
+.plantItem {
+    display: flex;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.plantImage {
+    width: 150px;
+    margin-right: 10px;
+}
+
+.plantInfo {
+    display: flex;
+    flex-direction: column;
+}

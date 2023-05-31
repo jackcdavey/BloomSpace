@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import { useRouter } from 'next/router';
 import Dropzone from '../imageHandler';
+import Navbar from './components/navbar';
 
 export default function Home() {
   const router = useRouter();
@@ -15,6 +16,7 @@ export default function Home() {
 
   return (
     <div>
+      <Navbar />
       <h1>Your AI Plant Arranger</h1>
       <Dropzone />
       <form onSubmit={handleSubmit}>
