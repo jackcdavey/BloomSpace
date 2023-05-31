@@ -7,7 +7,14 @@ export default function Result() {
     return (
         <div>
             <Navbar />
-            <h1>{aiRoomName}</h1>
+            <div style={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+            }}>
+                <h3>Welcome to...</h3>
+                <h1 style={{ marginTop: 0, paddingTop: 0 }}>{aiRoomName}</h1>
+            </div>
             <p>Your AI-edited image here: Placeholder</p>
             <PlantSuggestions />
         </div>

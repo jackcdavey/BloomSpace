@@ -1,12 +1,27 @@
 // Import css file
 import styles from './PlantSuggestions.module.css';
 
+import React from 'react';
+
+// const BuyLink = ({ word }) => {
+//     const handleRedirect = () => {
+//         const searchQuery = `buy ${word}`;
+//         const url = `https://www.google.com/search?q=${encodeURIComponent(searchQuery)}&btnI=1`;
+//         window.open(url, '_blank');
+//     };
+
+//     return (
+//         <button onClick={handleRedirect}>Buy {word}</button>
+//     );
+// };
+
+
 const plantSuggestions = [
     {
         name: 'Plant 1',
         description: 'This is a great plant!',
         imageUrl: 'https://via.placeholder.com/150',
-        purchaseUrl: 'https://example.com',
+        purchaseUrl: 'https://www.google.com/search?q=buy+plant+1&btnI=1'
     },
     {
         name: 'Plant 2',

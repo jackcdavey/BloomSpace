@@ -51,10 +51,10 @@ export default function Home() {
         });
 
         // Use the responses
-        console.log(responsePrompt.data.result);
-        console.log(responseGoogleVision.data.result);
-        console.log(responseStableDiffusion.data.result);
-        console.log(responseColorInfo.data);
+        console.log('response prompt: ' + responsePrompt.data.result);
+        console.log('google vision: ' + responseGoogleVision.data.result);
+        console.log('stable diffusion: ' + responseStableDiffusion.data.result);
+        console.log('color info: ' + responseColorInfo.data);
 
     } catch (error) {
         console.error(error);

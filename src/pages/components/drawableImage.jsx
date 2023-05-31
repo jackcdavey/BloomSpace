@@ -15,22 +15,28 @@ function DrawableImage({ image }) {
 
         const stopDrawing = () => {
             isDrawing = false;
+            context.beginPath(); // Reset the context state
         };
 
         const draw = (event) => {
             if (!isDrawing) return;
-            context.strokeStyle = 'yellow'; // Set the color of the drawing
-            context.lineWidth = 5; // Set the width of the drawing
-            context.lineCap = 'round'; // Set the end of the line to be rounded
-            context.lineTo(event.clientX - canvas.offsetLeft, event.clientY - canvas.offsetTop);
+            const rect = canvas.getBoundingClientRect(); // get the bounding rectangle
+            const scaleX = canvas.width / rect.width;   // relationship bitmap vs. element for X
+            const scaleY = canvas.height / rect.height; // relationship bitmap vs. element for Y
+            const x = (event.clientX - rect.left) * scaleX;  // scale mouse coordinates after they have
+            const y = (event.clientY - rect.top) * scaleY;
+            context.strokeStyle = 'rgba(255, 255, 0, 0.3)';
+            context.lineWidth = 300; // make the line thicker
+            context.lineCap = 'round';
+            context.lineTo(x, y);
             context.stroke();
             context.beginPath();
-            context.moveTo(event.clientX - canvas.offsetLeft, event.clientY - canvas.offsetTop);
+            context.moveTo(x, y);
         };
 
         if (image) {
             const img = new Image();
-            img.src = URL.createObjectURL(image);
+            img.src = image;
             img.onload = () => {
                 canvas.width = img.width;
                 canvas.height = img.height;
@@ -38,14 +44,12 @@ function DrawableImage({ image }) {
             };
         }
 
-        // Add the event listeners to the canvas
         canvas.addEventListener('mousedown', startDrawing);
         canvas.addEventListener('mouseup', stopDrawing);
         canvas.addEventListener('mouseout', stopDrawing);
         canvas.addEventListener('mousemove', draw);
 
         return () => {
-            // Remove the event listeners from the canvas
             canvas.removeEventListener('mousedown', startDrawing);
             canvas.removeEventListener('mouseup', stopDrawing);
             canvas.removeEventListener('mouseout', stopDrawing);
@@ -53,7 +57,7 @@ function DrawableImage({ image }) {
         };
     }, [image]);
 
-    return <canvas ref={canvasRef} />;
+    return <canvas ref={canvasRef} style={{ border: '1px solid black', borderRadius: '3rem', width: '70%', height: '30rem' }} />;
 }
 
 export default DrawableImage;

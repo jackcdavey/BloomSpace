@@ -12,7 +12,7 @@ function ColorSelector({ colors, selectedColor, setSelectedColor }) {
                 <button
                     className={selectedColor === color ? 'color-button-selected' : 'color-button'}
                     key={index}
-                    style={{ backgroundColor: `rgb(${color.join(',')})` }}
+                    style={{ backgroundColor: color, padding: '20px' }}
                     onClick={() => setSelectedColor(color)}
 
                 />

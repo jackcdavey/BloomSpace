@@ -12,13 +12,12 @@ export default function Highlight() {
     const [colors, setColors] = useState([]);
 
     useEffect(() => {
-        // Here you should make the request to your API to get the color palette
-        // I'll set a hardcoded palette for the example
+        // Get the colors from the python server
         setColors([
-            [255, 0, 0],
-            [0, 255, 0],
-            [0, 0, 255],
-            [255, 255, 0],
+            '#95837c',
+            '#ccccc3',
+            '#2c2324',
+            '#fa04f9',
             [0, 255, 255],
         ]);
     }, []);
@@ -29,12 +28,18 @@ export default function Highlight() {
         router.push('/result');
     };
 
+    console.log(file + ' is the file');
     return (
         <div>
             <Navbar />
             <h1>Highlight Plant Location</h1>
-            <DrawableImage image={file} />
-            <h1>Select Your Preferred Color</h1>
+            <div style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
+                <DrawableImage image={'./assets/IMG_2374.jpeg'} />
+            </div>
+            {/* <img src={file} alt="Preview" /> */}
+            {/* <img src="./assets/IMG_2374.jpeg" alt="Preview" style={{ maxWidth: '50%', borderRadius: '2rem' }} /> */}
+            <h1 style={{ margin: 0 }}>Select Your Preferred Color</h1>
+
             <div style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
                 <ColorSelector
                     colors={colors}
