@@ -1,11 +1,28 @@
 import Navbar from './components/navbar';
 import PlantSuggestions from './PlantSuggestions';
 import { useRouter } from 'next/router';
+import axios from 'axios';
+import { use, useEffect, useState } from 'react';
 
 export default function Result() {
     const router = useRouter();
-    const aiRoomName = 'The Rosy Dot Heaven'; // Placeholder, replace with actual room name
+    const mainPlant = router.query.mainPlant;
+    const userInput = router.query.userInput;
+    const color = router.query.color;
+    // const aiRoomName = await axios.post('/api/getAiRoomName', { file: file });
     const plants = JSON.parse(router.query.plants);
+
+    const [aiRoomName, setAiRoomName] = useState('');
+    useEffect(() => {
+        const fetchAiRoomName = async () => {
+            const res = await axios.post('/api/getRoomName', { mainPlant: mainPlant, userInput: userInput, color: color });
+            console.log('AI Room Name: ', JSON.stringify(res));
+            setAiRoomName(res.data.responseText);
+        };
+
+        fetchAiRoomName();
+    }, []);
+
 
     return (
         <div>

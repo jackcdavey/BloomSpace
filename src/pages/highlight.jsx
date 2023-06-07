@@ -84,6 +84,9 @@ export default function Highlight() {
             pathname: '/result',
             query: {
                 plants: JSON.stringify(plantsArray), // Pass the array as a JSON string
+                mainPlant: JSON.stringify(plantsArray[0]),
+                userInput: userInput,
+                color: colorName,
             },
         });
     };

@@ -17,20 +17,7 @@ import axios from 'axios';
 // };
 
 
-const plantSuggestions = [
-    {
-        name: 'Hypoestes Phyllostachya',
-        description: 'The Pink Polka Dot Plant is a compact and bushy houseplant with vibrant pink leaves adorned with contrasting polka dots. It thrives in moderate to bright indirect light and requires regular watering to keep the soil slightly damp.',
-        imageUrl: './assets/hypoestes.png',
-        purchaseUrl: 'https://www.google.com/search?q=buy+plant+1&btnI=1'
-    },
-    {
-        name: 'Monstera Deliciosa',
-        description: 'The Monstera plant, also known as the Swiss cheese plant, is a popular choice for indoor greenery with its large, glossy leaves featuring unique natural cutouts. It thrives in moderate light conditions and can add a touch of tropical elegance to any space.',
-        imageUrl: './assets/monstera.png',
-        purchaseUrl: 'https://example.com',
-    },
-];
+const plantSuggestions = [];
 
 const PlantSuggestions = ({ plants }) => {
     const [suggestions, setSuggestions] = useState(plantSuggestions);
