@@ -42,13 +42,16 @@ const PlantSuggestions = ({ plants }) => {
             for (let i = 0; i < Math.min(plants.length, 5); i++) {
                 const plant = plants[i];
                 const res = await axios.post('/api/getPlantDescriptions', { plants: [plant] });
+                const imgRes = await axios.post('/api/getPlantImage', { plant: plant });
+                const resURL = imgRes.data.imageUrl.replace(/^"|"$/g, '');
                 console.log('Plant name: ', plant);
                 console.log('Plant description: ', res);
+                console.log('Used Image URL: ', resURL);
 
                 newSuggestions.push({
                     name: plant,
                     description: res.data.descriptions[0].description,
-                    imageUrl: './assets/monstera.png',
+                    imageUrl: resURL,
                     purchaseUrl: 'https://example.com',
                 });
             }
@@ -56,7 +59,34 @@ const PlantSuggestions = ({ plants }) => {
             setSuggestions(prevSuggestions => [...prevSuggestions, ...newSuggestions]);
         };
 
+        // const fetchImages = async () => {
+        //     const newSuggestions = [];
+        //     setSuggestions([]);
+        //     for (let i = 0; i < Math.min(plants.length, 5); i++) {
+        //         const plant = plants[i];
+
+        //         // Fetch the image URL
+        //         const imgRes = await axios.post('/api/getPlantImage', { plant: plant });
+
+        //         console.log('Used Image URL: ', JSON.stringify(imgRes.data.imageUrl));
+
+
+        //         newSuggestions.push({
+        //             name: plant.name,
+        //             description: plant.description,
+        //             imageUrl: JSON.stringify(imgRes.data.imageUrl),
+        //             purchaseUrl: 'https://example.com',
+        //         });
+        //         console.log('New Suggestions: ', newSuggestions);
+        //     }
+
+
+
+        // };
+
+
         fetchDescriptions();
+        // fetchImages();
     }, [plants]);
 
 
