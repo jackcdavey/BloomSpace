@@ -39,6 +39,9 @@ export default function Highlight() {
                 return rgbToHex(color[0], color[1], color[2]);
             });
 
+            // Add default green color to the array
+            hexColorArray.push('#89b14e');
+
             // Update the colors state with the hexadecimal colors
             setColors(hexColorArray);
 
