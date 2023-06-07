@@ -5,6 +5,7 @@ import axios from 'axios';
 import DrawableImage from './components/DrawableImage';
 import ColorSelector from './components/ColorSelector';
 import FileContext from './context/FileContext';
+import namer from 'color-namer';
 
 function componentToHex(c) {
     var hex = c.toString(16);
@@ -36,6 +37,7 @@ export default function Highlight() {
             console.log('Color Array: ', colorArray);
             // Convert the RGB arrays to strings, then to hex, then add to the array
             const hexColorArray = colorArray.map((color) => {
+                console.log('General color name: ', namer(color));
                 return rgbToHex(color[0], color[1], color[2]);
             });
 
@@ -54,15 +56,24 @@ export default function Highlight() {
         e.preventDefault();
 
         // Send drawing data to the Python server
-        const response = await axios.post('http://your_ngrok_url/draw', {
-            data: drawings
+        // const response = await axios.post('http://your_ngrok_url/draw', {
+        //     data: drawings
+        // });
+
+        // console.log(response);
+
+        // Call OpenAI API with selected color
+        const colorName = namer(selectedColor).basic[0].name;  // Get the color name
+        const openAIResponse = await axios.post('/api/getPlantsByColor', {
+            color: colorName
         });
 
-        console.log(response);
+        console.log(openAIResponse.data.responseText);  // Log the OpenAI response
 
         // TODO: handle image highlighting and color selection
         router.push('/result');
     };
+
 
     // Function to record a drawing action
     const recordDrawing = (x, y, event) => {
