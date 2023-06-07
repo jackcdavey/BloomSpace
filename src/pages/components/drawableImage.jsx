@@ -57,7 +57,7 @@ function DrawableImage({ image }) {
         };
     }, [image]);
 
-    return <canvas ref={canvasRef} style={{ border: '1px solid black', borderRadius: '3rem', width: '70%', height: '30rem' }} />;
+    return <canvas ref={canvasRef} style={{ border: '1px solid black', borderRadius: '3rem', width: '70%', height: '25rem' }} />;
 }
 
 export default DrawableImage;
