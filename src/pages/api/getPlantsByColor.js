@@ -1,11 +1,13 @@
 import openai from "../openai";
 
 export default async function handler(req, res) {
-  const { color } = req.body;
+    const { color } = req.body;
+    const { userInput } = req.body;
+    
 
     let completion;
     
-      const prompt = `A list of popular houseplants featuring ${color}:`;
+      const prompt = `A list of popular houseplants featuring ${color} that match ${userInput}:`;
   console.log("OpenAI Prompt: ", prompt);
 
   try {

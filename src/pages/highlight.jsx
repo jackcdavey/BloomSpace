@@ -18,6 +18,7 @@ function rgbToHex(r, g, b) {
 export default function Highlight() {
     const router = useRouter();
     const file = router.query.file;
+    const userInput = router.query.userInput;
     const [selectedColor, setSelectedColor] = useState('');
     const [colors, setColors] = useState([]);
     const [drawings, setDrawings] = useState([]);
@@ -65,7 +66,8 @@ export default function Highlight() {
         // Call OpenAI API with selected color
         const colorName = namer(selectedColor).basic[0].name;  // Get the color name
         const openAIResponse = await axios.post('/api/getPlantsByColor', {
-            color: colorName
+            color: colorName,
+            userInput: userInput
         });
 
         console.log(openAIResponse.data.responseText);  // Log the OpenAI response
