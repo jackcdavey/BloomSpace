@@ -2,6 +2,7 @@
 import styles from './PlantSuggestions.module.css';
 import { useEffect, useState } from 'react';
 import React from 'react';
+import axios from 'axios';
 
 // const BuyLink = ({ word }) => {
 //     const handleRedirect = () => {
@@ -32,22 +33,33 @@ const plantSuggestions = [
 ];
 
 const PlantSuggestions = ({ plants }) => {
-    const [suggestions, setSuggestions] = useState([]);
+    const [suggestions, setSuggestions] = useState(plantSuggestions);
 
     useEffect(() => {
-        const newSuggestions = [...plantSuggestions];
+        const fetchDescriptions = async () => {
+            const newSuggestions = [];
 
-        plants.forEach((plant) => {
-            newSuggestions.push({
-                name: plant,
-                description: 'This is a placeholder description',
-                imageUrl: './assets/monstera.png',
-                purchaseUrl: 'https://example.com',
-            });
-        });
+            for (let i = 0; i < Math.min(plants.length, 5); i++) {
+                const plant = plants[i];
+                const res = await axios.post('/api/getPlantDescriptions', { plants: [plant] });
+                console.log('Plant name: ', plant);
+                console.log('Plant description: ', res);
 
-        setSuggestions(newSuggestions);
+                newSuggestions.push({
+                    name: plant,
+                    description: res.data.descriptions[0].description,
+                    imageUrl: './assets/monstera.png',
+                    purchaseUrl: 'https://example.com',
+                });
+            }
+
+            setSuggestions(prevSuggestions => [...prevSuggestions, ...newSuggestions]);
+        };
+
+        fetchDescriptions();
     }, [plants]);
+
+
 
     return (
         <div className={styles.suggestionsContainer}>

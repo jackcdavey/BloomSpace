@@ -78,6 +78,7 @@ export default function Highlight() {
 
         // parse the openAIResponse into an array
         const plantsArray = parsePlants(openAIResponse.data.responseText);
+        console.log("Arr" + plantsArray);
 
         router.push({
             pathname: '/result',
