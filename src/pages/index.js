@@ -41,7 +41,7 @@ const handleSubmit = async (e) => {
 
     router.push({
         pathname: '/highlight',
-        query: { file: file },
+        query: { file: URL.createObjectURL(file) },
     });
 };
 

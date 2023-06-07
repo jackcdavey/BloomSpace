@@ -75,7 +75,7 @@ export default function Highlight() {
             <Navbar />
             <h1>Highlight Plant Location</h1>
             <div style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
-                <DrawableImage image={'./assets/IMG_2374.jpeg'} onDraw={recordDrawing} />
+                <DrawableImage image={file} onDraw={recordDrawing} />
             </div>
             <h1 style={{ margin: 0 }}>Select Your Preferred Color</h1>
 
