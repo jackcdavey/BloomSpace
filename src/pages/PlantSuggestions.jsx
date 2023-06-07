@@ -1,6 +1,6 @@
 // Import css file
 import styles from './PlantSuggestions.module.css';
-
+import { useEffect, useState } from 'react';
 import React from 'react';
 
 // const BuyLink = ({ word }) => {
@@ -31,11 +31,28 @@ const plantSuggestions = [
     },
 ];
 
-const PlantSuggestions = () => {
+const PlantSuggestions = ({ plants }) => {
+    const [suggestions, setSuggestions] = useState([]);
+
+    useEffect(() => {
+        const newSuggestions = [...plantSuggestions];
+
+        plants.forEach((plant) => {
+            newSuggestions.push({
+                name: plant,
+                description: 'This is a placeholder description',
+                imageUrl: './assets/monstera.png',
+                purchaseUrl: 'https://example.com',
+            });
+        });
+
+        setSuggestions(newSuggestions);
+    }, [plants]);
+
     return (
         <div className={styles.suggestionsContainer}>
             <h2 style={{ width: '100%', marginTop: '4rem', textAlign: 'center' }}>All Plant Suggestions</h2>
-            {plantSuggestions.map((plant, index) => (
+            {suggestions.map((plant, index) => (
                 <div key={index} className={styles.plantItem}>
                     <img src={plant.imageUrl} alt={plant.name} className={styles.plantImage} />
                     <div className={styles.plantInfo}>

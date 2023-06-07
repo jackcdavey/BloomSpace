@@ -53,15 +53,19 @@ export default function Highlight() {
         }
     }, []);
 
+    const parsePlants = (responseText) => {
+        const regex = /\d+\.\s(.*?)(?=\s\d+\.|\s•|$)|•\s(.*?)(?=\s\d+\.|\s•|$)/g;
+        let match;
+        const plants = [];
+        while ((match = regex.exec(responseText)) !== null) {
+            plants.push(match[1] || match[2]);
+        }
+        return plants;
+    };
+
+
     const handleSubmit = async (e) => {
         e.preventDefault();
-
-        // Send drawing data to the Python server
-        // const response = await axios.post('http://your_ngrok_url/draw', {
-        //     data: drawings
-        // });
-
-        // console.log(response);
 
         // Call OpenAI API with selected color
         const colorName = namer(selectedColor).basic[0].name;  // Get the color name
@@ -72,9 +76,17 @@ export default function Highlight() {
 
         console.log(openAIResponse.data.responseText);  // Log the OpenAI response
 
-        // TODO: handle image highlighting and color selection
-        router.push('/result');
+        // parse the openAIResponse into an array
+        const plantsArray = parsePlants(openAIResponse.data.responseText);
+
+        router.push({
+            pathname: '/result',
+            query: {
+                plants: JSON.stringify(plantsArray), // Pass the array as a JSON string
+            },
+        });
     };
+
 
 
     // Function to record a drawing action

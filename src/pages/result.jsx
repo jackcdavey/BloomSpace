@@ -1,8 +1,11 @@
 import Navbar from './components/navbar';
 import PlantSuggestions from './PlantSuggestions';
+import { useRouter } from 'next/router';
 
 export default function Result() {
+    const router = useRouter();
     const aiRoomName = 'The Rosy Dot Heaven'; // Placeholder, replace with actual room name
+    const plants = JSON.parse(router.query.plants);
 
     return (
         <div>
@@ -17,7 +20,8 @@ export default function Result() {
                 <h1 style={{ marginTop: 0, paddingTop: 0 }}>{aiRoomName}</h1>
 
                 <img src='./assets/tmpxv999h5q.png' alt='Preview' style={{ maxWidth: '50%', borderRadius: '2rem' }} />
-                <PlantSuggestions />
+
+                <PlantSuggestions plants={plants} />
             </div>
         </div>
     );
