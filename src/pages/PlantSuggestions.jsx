@@ -4,19 +4,6 @@ import { useEffect, useState } from 'react';
 import React from 'react';
 import axios from 'axios';
 
-// const BuyLink = ({ word }) => {
-//     const handleRedirect = () => {
-//         const searchQuery = `buy ${word}`;
-//         const url = `https://www.google.com/search?q=${encodeURIComponent(searchQuery)}&btnI=1`;
-//         window.open(url, '_blank');
-//     };
-
-//     return (
-//         <button onClick={handleRedirect}>Buy {word}</button>
-//     );
-// };
-
-
 const plantSuggestions = [];
 
 const PlantSuggestions = ({ plants }) => {
@@ -43,38 +30,11 @@ const PlantSuggestions = ({ plants }) => {
                 });
             }
 
-            setSuggestions(prevSuggestions => [...prevSuggestions, ...newSuggestions]);
+            setSuggestions(newSuggestions);
         };
-
-        // const fetchImages = async () => {
-        //     const newSuggestions = [];
-        //     setSuggestions([]);
-        //     for (let i = 0; i < Math.min(plants.length, 5); i++) {
-        //         const plant = plants[i];
-
-        //         // Fetch the image URL
-        //         const imgRes = await axios.post('/api/getPlantImage', { plant: plant });
-
-        //         console.log('Used Image URL: ', JSON.stringify(imgRes.data.imageUrl));
-
-
-        //         newSuggestions.push({
-        //             name: plant.name,
-        //             description: plant.description,
-        //             imageUrl: JSON.stringify(imgRes.data.imageUrl),
-        //             purchaseUrl: 'https://example.com',
-        //         });
-        //         console.log('New Suggestions: ', newSuggestions);
-        //     }
-
-
-
-        // };
-
-
         fetchDescriptions();
-        // fetchImages();
     }, [plants]);
+
 
 
 
