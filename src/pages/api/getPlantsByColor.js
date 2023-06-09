@@ -7,7 +7,7 @@ export default async function handler(req, res) {
 
     let completion;
     
-      const prompt = `A list of popular houseplants featuring ${color} that match ${userInput}:`;
+      const prompt = `A list of houseplants that dominantly feature the color ${color} and match ${userInput}:`;
   console.log("OpenAI Prompt: ", prompt);
 
   try {

@@ -2,12 +2,13 @@ import openai from "../openai";
 
 export default async function handler(req, res) {
     const { plants } = req.body;
+    const { userInput } = req.body;
     let responses = [];
 
     for (let plant of plants) {
         let completion;
 
-        const prompt = `A brief description for buyers of: ${plant}`;
+        const prompt = `A brief description for buyers of: ${plant}, and how it adheres to ${userInput}`;
         console.log("OpenAI Prompt: ", prompt);
 
         try {

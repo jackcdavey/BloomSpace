@@ -3,11 +3,12 @@
 import openai from "../openai";
 export default async function handler(req, res){
 
-    const plant = req.body.plant;
+    const {plant} = req.body;
+    const {color} = req.body;
 
     let imageResponse;
 
-    const prompt = `A realistic illustration of a ${plant}`;
+    const prompt = `A realistic illustration of a ${color} ${plant} featuring the color ${color}:`;
     console.log("OpenAI Prompt: ", prompt);
 
     try {

@@ -44,9 +44,16 @@ export default function Highlight() {
 
             // Add default green color to the array
             hexColorArray.push('#89b14e');
+            // Add test red color to the array
+            hexColorArray.push('#ff0000');
 
             // Update the colors state with the hexadecimal colors
             setColors(hexColorArray);
+            // Print each closest color name
+            hexColorArray.forEach((color) => {
+                console.log('Closest color name: ', namer(color));
+            });
+
 
         } else {
             console.log('No color info found');
@@ -87,7 +94,7 @@ export default function Highlight() {
                 mainPlant: JSON.stringify(plantsArray[0]),
                 userInput: userInput,
                 color: colorName,
-                file: file,
+                // file: URL.createObjectURL(file),
             },
         });
     };
