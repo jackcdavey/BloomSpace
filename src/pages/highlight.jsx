@@ -22,6 +22,19 @@ export default function Highlight() {
     const [selectedColor, setSelectedColor] = useState('');
     const [colors, setColors] = useState([]);
     const [drawings, setDrawings] = useState([]);
+    const commonColors = [
+        { name: "White", hex: "#FFFFFF" },
+        { name: "Black", hex: "#000000" },
+        { name: "Red", hex: "#FF0000" },
+        { name: "Green", hex: "#00FF00" },
+        { name: "Blue", hex: "#0000FF" },
+        { name: "Yellow", hex: "#FFFF00" },
+        { name: "Cyan", hex: "#00FFFF" },
+        { name: "Magenta", hex: "#FF00FF" },
+        { name: "Maroon", hex: "#800000" },
+        { name: "Olive", hex: "#808000" },
+
+    ];
 
     useEffect(() => {
         // Get the colors from the local storage
@@ -44,8 +57,7 @@ export default function Highlight() {
 
             // Add default green color to the array
             hexColorArray.push('#89b14e');
-            // Add test red color to the array
-            hexColorArray.push('#ff0000');
+
 
             // Update the colors state with the hexadecimal colors
             setColors(hexColorArray);
@@ -106,7 +118,10 @@ export default function Highlight() {
         setDrawings(drawings => [...drawings, [x, y, event]]);
     };
 
-    console.log(file + ' is the file');
+    const handleDropdownChange = (event) => {
+        setSelectedColor(event.target.value);
+    }
+
     return (
         <div>
             <Navbar />
@@ -119,6 +134,7 @@ export default function Highlight() {
             <div style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
                 <ColorSelector
                     colors={colors}
+                    commonColors={commonColors}
                     selectedColor={selectedColor}
                     setSelectedColor={setSelectedColor}
                 />
