@@ -1,10 +1,7 @@
 import { useState } from 'react';
 
 function ColorSelector({ colors, commonColors, selectedColor, setSelectedColor }) {
-    const [dropdownColor, setDropdownColor] = useState(selectedColor);
-
     const handleSelect = (e) => {
-        setDropdownColor(e.target.value);
         setSelectedColor(e.target.value);
     };
 
@@ -13,7 +10,7 @@ function ColorSelector({ colors, commonColors, selectedColor, setSelectedColor }
             style={{
                 display: 'flex',
                 justifyContent: 'space-evenly',
-                width: '70vw',
+                width: '50vw',
                 flexDirection: 'row',
             }}
         >
@@ -25,12 +22,12 @@ function ColorSelector({ colors, commonColors, selectedColor, setSelectedColor }
                     onClick={() => setSelectedColor(color)}
                 />
             ))}
-            <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-                <label htmlFor="color-select">Or, Pick Another Color:</label>
-                <select id="color-select" value={dropdownColor} onChange={handleSelect}>
+            <div style={{ display: 'flex', flexDirection: 'column' }}>
+                <label htmlFor="color-select">Choose a color:</label>
+                <select id="color-select" value={selectedColor || ''} onChange={handleSelect}>
+                    <option value="" disabled hidden>Choose here</option>
                     {commonColors.map((color, index) => (
                         <option key={index} value={color.hex}>
-                            <span style={{ backgroundColor: color.hex, borderRadius: '50%', width: '10px', height: '10px', display: 'inline-block' }}></span>
                             {color.name}
                         </option>
                     ))}

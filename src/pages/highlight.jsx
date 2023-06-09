@@ -140,7 +140,7 @@ export default function Highlight() {
                 />
             </div>
             <form onSubmit={handleSubmit}>
-                <button type="submit">Submit</button>
+                <button type="submit" disabled={!selectedColor}>Submit</button>
             </form>
         </div>
     );
