@@ -22,6 +22,7 @@ const PlantSuggestions = ({ plants, color, userInput }) => {
                     description: res.data.descriptions[0].description,
                     imageUrl: resURL,
                     purchaseUrl: 'https://duckduckgo.com/?q=!+buy+' + plant + '+nearby',
+                    searchUrl: 'https://google.com/search?q=' + plant,
                 });
             }
 
@@ -44,9 +45,14 @@ const PlantSuggestions = ({ plants, color, userInput }) => {
                     <div className={styles.plantInfo}>
                         <h3 style={{ marginBottom: 0 }}>{plant.name}</h3>
                         <p>{plant.description}</p>
-                        <a style={{ backgroundColor: 'gray', width: '8rem', height: '4rem', borderRadius: '1rem', display: 'flex', flexDirection: 'column', alignItems: 'center', color: 'white', textDecoration: 'none' }} href={plant.purchaseUrl} target="_blank" rel="noopener noreferrer">
-                            <h4>Buy Now!</h4>
-                        </a>
+                        <div style={{ display: 'flex', flexDirection: 'row' }}>
+                            <a style={{ backgroundColor: 'gray', width: '8rem', height: '4rem', borderRadius: '1rem', display: 'flex', flexDirection: 'column', alignItems: 'center', color: 'white', textDecoration: 'none' }} href={plant.purchaseUrl} target="_blank" rel="noopener noreferrer">
+                                <h4>Buy Now!</h4>
+                            </a>
+                            <a style={{ backgroundColor: 'gray', width: '8rem', height: '4rem', borderRadius: '1rem', display: 'flex', flexDirection: 'column', alignItems: 'center', color: 'white', textDecoration: 'none' }} href={plant.searchUrl} target="_blank" rel="noopener noreferrer">
+                                <h4>Learn More!</h4>
+                            </a>
+                        </div>
                     </div>
                 </div>
             ))}

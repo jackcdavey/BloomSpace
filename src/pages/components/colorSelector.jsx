@@ -23,9 +23,9 @@ function ColorSelector({ colors, commonColors, selectedColor, setSelectedColor }
                 />
             ))}
             <div style={{ display: 'flex', flexDirection: 'column' }}>
-                <label htmlFor="color-select">Choose a color:</label>
+                <label htmlFor="color-select">Choose another color:</label>
                 <select id="color-select" value={selectedColor || ''} onChange={handleSelect}>
-                    <option value="" disabled hidden>Choose here</option>
+                    <option value="" disabled hidden>Default Options</option>
                     {commonColors.map((color, index) => (
                         <option key={index} value={color.hex}>
                             {color.name}

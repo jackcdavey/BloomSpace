@@ -56,7 +56,7 @@ export default function Highlight() {
             });
 
             // Add default green color to the array
-            hexColorArray.push('#89b14e');
+            // hexColorArray.push('#89b14e');
 
 
             // Update the colors state with the hexadecimal colors
