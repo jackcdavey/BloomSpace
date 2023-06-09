@@ -8,7 +8,7 @@ export default async function handler(req, res){
 
     let imageResponse;
 
-    const prompt = `A realistic illustration of a ${color} ${plant} featuring the color ${color}:`;
+    const prompt = `A realistic ${color} illustration of a ${color} ${plant} prominently featuring the color ${color}:`;
     console.log("OpenAI Prompt: ", prompt);
 
     try {

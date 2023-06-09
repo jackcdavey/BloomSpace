@@ -67,7 +67,7 @@ export default function Home() {
                         type="text"
                         value={userInput}
                         onChange={(e) => setUserInput(e.target.value)}
-                        placeholder="Because why not? Enter any extra details / preferences here."
+                        placeholder="Enter any extra requirements / preferences here."
                     />
                     <button type="submit">Submit</button>
                 </form>
