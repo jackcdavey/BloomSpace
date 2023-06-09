@@ -9,6 +9,10 @@ export default function Result() {
     const mainPlant = router.query.mainPlant;
     const userInput = router.query.userInput;
     const color = router.query.color;
+    const file = router.query.file;
+    console.log('Result File: ', file);
+    const resImage = new Image();
+    resImage.src = file;
     // const aiRoomName = await axios.post('/api/getAiRoomName', { file: file });
     const plants = JSON.parse(router.query.plants);
 
@@ -36,7 +40,7 @@ export default function Result() {
                 <h3>Welcome to...</h3>
                 <h1 style={{ marginTop: 0, paddingTop: 0 }}>{aiRoomName}</h1>
 
-                <img src='./assets/tmpxv999h5q.png' alt='Preview' style={{ maxWidth: '50%', borderRadius: '2rem' }} />
+                <img src={resImage} alt='Preview' style={{ maxWidth: '50%', borderRadius: '2rem' }} />
 
                 <PlantSuggestions plants={plants} />
             </div>

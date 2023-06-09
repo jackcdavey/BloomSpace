@@ -87,6 +87,7 @@ export default function Highlight() {
                 mainPlant: JSON.stringify(plantsArray[0]),
                 userInput: userInput,
                 color: colorName,
+                file: file,
             },
         });
     };

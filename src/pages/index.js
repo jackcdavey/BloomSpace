@@ -12,7 +12,7 @@ export default function Home() {
   const fileValue = useMemo(() => ({ file, setFile }), [file, setFile]);
   const [userInput, setUserInput] = useState('');
 
-  const API_BASE_URL = 'https://d79c-2600-1700-5454-1640-f06e-371a-72ce-64c7.ngrok-free.app';
+  const API_BASE_URL = 'https://899e-2600-1700-5454-1640-f55e-511b-f77b-d0bf.ngrok-free.app';
 
 const handleSubmit = async (e) => {
     e.preventDefault();
