@@ -16,7 +16,9 @@ export default function Result() {
     // const aiRoomName = await axios.post('/api/getAiRoomName', { file: file });
     const plants = JSON.parse(router.query.plants);
 
+
     const [aiRoomName, setAiRoomName] = useState('');
+    const [roomImgSrc, setRoomImgSrc] = useState('');
     useEffect(() => {
         const fetchAiRoomName = async () => {
             const res = await axios.post('/api/getRoomName', { mainPlant: mainPlant, userInput: userInput, color: color });
@@ -25,6 +27,14 @@ export default function Result() {
         };
 
         fetchAiRoomName();
+
+        const fetchAiRoomImage = async () => {
+            const res = await axios.post('/api/getRoomImage', { plant: mainPlant, color: color });
+            console.log('AI Room Image: ', JSON.stringify(res));
+            setRoomImgSrc(res.data.imageUrl.replace(/^"|"$/g, ''));
+        }
+        fetchAiRoomImage();
+
     }, []);
 
 
@@ -39,6 +49,8 @@ export default function Result() {
             }}>
                 <h3>Welcome to...</h3>
                 <h1 style={{ marginTop: 0, paddingTop: 0 }}>{aiRoomName}</h1>
+
+                <img src={roomImgSrc} alt='Preview' style={{ maxWidth: '50%', borderRadius: '2rem' }} />
 
                 {/* <img src={resImage} alt='Preview' style={{ maxWidth: '50%', borderRadius: '2rem' }} /> */}
 
