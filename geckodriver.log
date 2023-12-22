@@ -1,0 +1,620 @@
+1686095040968	geckodriver	INFO	Listening on 127.0.0.1:50510
+1686095044019	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50511" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jack2\\AppData\\Local\\Temp\\rust_mozprofile9cl3UI"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686095044444	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1686095044449	Marionette	INFO	Listening on port 50522
+Read port: 50522
+WebDriver BiDi listening on ws://127.0.0.1:50511
+1686095044560	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:50511/devtools/browser/8124cc27-4691-4117-a821-a3471ee30e2e
+1686095048068	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[Child 18912, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 18912, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 18912, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 18912, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 18912, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 18912, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 18912, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 18912, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+1686095051272	Marionette	INFO	Stopped listening on port 50522
+Dynamically enable window occlusion 1
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  Waiting for ping task
+          Phase: TelemetryController: Waiting for pending ping activity
+          State: (none)
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:727:15
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:458:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.sys.mjs:10:28
+_checkPendingPings@resource://gre/modules/TelemetrySend.sys.mjs:859:17
+setup@resource://gre/modules/TelemetrySend.sys.mjs:799:18
+setup@resource://gre/modules/TelemetrySend.sys.mjs:237:30
+setupTelemetry/this._delayedInitTask<@resource://gre/modules/TelemetryControllerParent.sys.mjs:824:36
+observe@resource://gre/modules/AsyncShutdown.sys.mjs:576:16
+
+console.error: "TelemetryScheduler.shutdown - Already shut down"
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  Waiting for ping task
+          Phase: TelemetryController: Waiting for pending ping activity
+          State: (none)
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:727:15
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:458:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.sys.mjs:10:28
+_checkPendingPings@resource://gre/modules/TelemetrySend.sys.mjs:859:17
+setup@resource://gre/modules/TelemetrySend.sys.mjs:799:18
+setup@resource://gre/modules/TelemetrySend.sys.mjs:237:30
+setupTelemetry/this._delayedInitTask<@resource://gre/modules/TelemetryControllerParent.sys.mjs:824:36
+observe@resource://gre/modules/AsyncShutdown.sys.mjs:576:16
+
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  Waiting for ping task
+          Phase: TelemetryController: Waiting for pending ping activity
+          State: (none)
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:727:15
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:458:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.sys.mjs:10:28
+_checkPendingPings@resource://gre/modules/TelemetrySend.sys.mjs:859:17
+setup@resource://gre/modules/TelemetrySend.sys.mjs:799:18
+setup@resource://gre/modules/TelemetrySend.sys.mjs:237:30
+setupTelemetry/this._delayedInitTask<@resource://gre/modules/TelemetryControllerParent.sys.mjs:824:36
+observe@resource://gre/modules/AsyncShutdown.sys.mjs:576:16
+
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  TelemetryController: shutting down
+          Phase: profile-before-change-telemetry
+          State: Error getting state: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange" at addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:727:15
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:458:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.sys.mjs:10:28
+_checkPendingPings@resource://gre/modules/TelemetrySend.sys.mjs:859:17
+setup@resource://gre/modules/TelemetrySend.sys.mjs:799:18
+setup@resource://gre/modules/TelemetrySend.sys.mjs:237:30
+setupTelemetry/this._delayedInitTask<@resource://gre/modules/TelemetryControllerParent.sys.mjs:824:36
+observe@resource://gre/modules/AsyncShutdown.sys.mjs:576:16
+
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:727:15
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:458:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.sys.mjs:10:28
+_checkPendingPings@resource://gre/modules/TelemetrySend.sys.mjs:859:17
+setup@resource://gre/modules/TelemetrySend.sys.mjs:799:18
+setup@resource://gre/modules/TelemetrySend.sys.mjs:237:30
+setupTelemetry/this._delayedInitTask<@resource://gre/modules/TelemetryControllerParent.sys.mjs:824:36
+observe@resource://gre/modules/AsyncShutdown.sys.mjs:576:16
+
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+1686095182620	geckodriver	INFO	Listening on 127.0.0.1:50620
+1686095185674	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50621" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jack2\\AppData\\Local\\Temp\\rust_mozprofileyHrrKX"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686095186062	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1686095186067	Marionette	INFO	Listening on port 50628
+Read port: 50628
+WebDriver BiDi listening on ws://127.0.0.1:50621
+1686095186167	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:50621/devtools/browser/0ff3b2b6-7f0b-4920-a902-2e1687fdcffb
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 58: Error: Can't find profile directory.
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+console.error: "Error while calling actor 'pagestyle's method 'getApplied'" "node is null"
+console.error: (new TypeError("node is null", "resource://devtools/server/actors/page-style.js", 523))
+console.error: "Error while calling actor 'pagestyle's method 'getApplied'" "node is null"
+console.error: (new TypeError("node is null", "resource://devtools/server/actors/page-style.js", 523))
+console.error: (new TypeError("parent is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 67))
+TypeError: parent is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:67:24
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+getMutations@resource://devtools/client/fronts/walker.js:313:10
+
+console.error: "Error while calling actor 'pagestyle's method 'getApplied'" "node is null"
+console.error: (new TypeError("node is null", "resource://devtools/server/actors/page-style.js", 523))
+console.error: "Error while calling actor 'pagestyle's method 'getApplied'" "node is null"
+console.error: (new TypeError("node is null", "resource://devtools/server/actors/page-style.js", 523))
+console.error: "Error while calling actor 'pagestyle's method 'getApplied'" "node is null"
+console.error: (new TypeError("node is null", "resource://devtools/server/actors/page-style.js", 523))
+console.warn: "Listener for event 'frame' did not return a promise."
+[Child 13584, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (DevToolsFrame, DevToolsFrameChild:destroy) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+console.warn: "Listener for event 'frame' did not return a promise."
+console.warn: "Listener for event 'frame' did not return a promise."
+console.warn: "Listener for event 'frame' did not return a promise."
+console.warn: "Listener for event 'frame' did not return a promise."
+console.warn: "Listener for event 'frame' did not return a promise."
+console.warn: "Listener for event 'frame' did not return a promise."
+console.warn: "Listener for event 'frame' did not return a promise."
+console.warn: "Listener for event 'frame' did not return a promise."
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+[GFX1-]: Unexpected BufferProvider over-production.
+1686113534806	geckodriver	INFO	Listening on 127.0.0.1:51997
+1686113537857	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51998" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jack2\\AppData\\Local\\Temp\\rust_mozprofileuGQ8TH"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686113538327	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1686113538331	Marionette	INFO	Listening on port 52006
+WebDriver BiDi listening on ws://127.0.0.1:51998
+Read port: 52006
+1686113538576	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:51998/devtools/browser/bd547a32-8d18-4b71-988e-65a7ca17066f
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 58: Error: Can't find profile directory.
+1686113866978	geckodriver	INFO	Listening on 127.0.0.1:52129
+1686113870029	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52130" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jack2\\AppData\\Local\\Temp\\rust_mozprofilefu4hiC"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686113870421	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1686113870426	Marionette	INFO	Listening on port 52137
+Read port: 52137
+WebDriver BiDi listening on ws://127.0.0.1:52130
+1686113870525	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:52130/devtools/browser/b70bad56-fcc7-443a-9f55-ad35eceb88e2
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 58: Error: Can't find profile directory.
+1686114023392	geckodriver	INFO	Listening on 127.0.0.1:52244
+1686114026433	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52245" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jack2\\AppData\\Local\\Temp\\rust_mozprofileMGIhtq"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686114026828	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1686114026832	Marionette	INFO	Listening on port 52252
+Read port: 52252
+WebDriver BiDi listening on ws://127.0.0.1:52245
+1686114026933	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:52245/devtools/browser/80332543-d730-4a9c-b3b2-a0956d99c2a2
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 58: Error: Can't find profile directory.
+1686114114586	geckodriver	INFO	Listening on 127.0.0.1:52344
+1686114117659	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52345" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jack2\\AppData\\Local\\Temp\\rust_mozprofile25RK18"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686114118053	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1686114118057	Marionette	INFO	Listening on port 52352
+Read port: 52352
+WebDriver BiDi listening on ws://127.0.0.1:52345
+1686114118156	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:52345/devtools/browser/62c547b2-4ddc-46b8-8554-bf7380279fb4
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 58: Error: Can't find profile directory.
+1686114232308	geckodriver	INFO	Listening on 127.0.0.1:52438
+1686114235367	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52439" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jack2\\AppData\\Local\\Temp\\rust_mozprofileIsrjl0"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686114235758	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1686114235763	Marionette	INFO	Listening on port 52446
+Read port: 52446
+WebDriver BiDi listening on ws://127.0.0.1:52439
+1686114235865	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:52439/devtools/browser/d535b7e4-18dc-44cd-8748-d5fe1cacde39
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 58: Error: Can't find profile directory.
+1686114441691	geckodriver	INFO	Listening on 127.0.0.1:52531
+1686114444767	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52532" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jack2\\AppData\\Local\\Temp\\rust_mozprofileVttM6o"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686114445158	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1686114445163	Marionette	INFO	Listening on port 52539
+Read port: 52539
+WebDriver BiDi listening on ws://127.0.0.1:52532
+1686114445265	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:52532/devtools/browser/a96cd084-faab-433b-91f9-bd9706502a33
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 58: Error: Can't find profile directory.
+1686114640930	geckodriver	INFO	Listening on 127.0.0.1:52614
+1686114643958	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52615" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jack2\\AppData\\Local\\Temp\\rust_mozprofileS9i6jf"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686114644356	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1686114644361	Marionette	INFO	Listening on port 52622
+Read port: 52622
+WebDriver BiDi listening on ws://127.0.0.1:52615
+1686114644459	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:52615/devtools/browser/07fe4481-69c8-4fdd-8f4f-81be2549f09d
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 58: Error: Can't find profile directory.
+1686114751810	geckodriver	INFO	Listening on 127.0.0.1:52699
+1686114754849	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52700" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jack2\\AppData\\Local\\Temp\\rust_mozprofileU1Hkup"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686114755246	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1686114755251	Marionette	INFO	Listening on port 52707
+Read port: 52707
+WebDriver BiDi listening on ws://127.0.0.1:52700
+1686114755349	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:52700/devtools/browser/42777419-18e4-4d5d-a73c-7ddc6e9177de
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 58: Error: Can't find profile directory.
+1686114847425	geckodriver	INFO	Listening on 127.0.0.1:52786
+1686114850466	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52787" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jack2\\AppData\\Local\\Temp\\rust_mozprofile2hZ8SN"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686114850853	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1686114850857	Marionette	INFO	Listening on port 52794
+Read port: 52794
+WebDriver BiDi listening on ws://127.0.0.1:52787
+1686114850957	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:52787/devtools/browser/26b4e5a1-741d-47e9-b106-c9dc0e3cec95
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 58: Error: Can't find profile directory.
+1686114979675	geckodriver	INFO	Listening on 127.0.0.1:52870
+1686114982721	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52871" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jack2\\AppData\\Local\\Temp\\rust_mozprofilebm7gQs"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686114983116	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1686114983120	Marionette	INFO	Listening on port 52878
+Read port: 52878
+WebDriver BiDi listening on ws://127.0.0.1:52871
+1686114983235	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:52871/devtools/browser/77d0908d-7ad4-415c-bee3-46855523247c
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 58: Error: Can't find profile directory.
+1686115045261	geckodriver	INFO	Listening on 127.0.0.1:52965
+1686115048316	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52966" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jack2\\AppData\\Local\\Temp\\rust_mozprofileJrc2JU"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686115048706	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1686115048710	Marionette	INFO	Listening on port 52973
+Read port: 52973
+WebDriver BiDi listening on ws://127.0.0.1:52966
+1686115048808	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:52966/devtools/browser/921244ba-f273-41ad-83c1-658cade8d279
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 58: Error: Can't find profile directory.
+1686115263382	geckodriver	INFO	Listening on 127.0.0.1:53048
+1686115266415	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53049" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jack2\\AppData\\Local\\Temp\\rust_mozprofileq22CLe"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686115266805	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1686115266809	Marionette	INFO	Listening on port 53057
+Read port: 53057
+WebDriver BiDi listening on ws://127.0.0.1:53049
+1686115266908	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:53049/devtools/browser/760b896c-38d8-4ada-a1c3-09747f12d565
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 58: Error: Can't find profile directory.
+1686115507643	geckodriver	INFO	Listening on 127.0.0.1:53151
+1686115510686	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53152" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jack2\\AppData\\Local\\Temp\\rust_mozprofilevzwQO0"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686115511084	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1686115511089	Marionette	INFO	Listening on port 53159
+Read port: 53159
+WebDriver BiDi listening on ws://127.0.0.1:53152
+1686115511191	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:53152/devtools/browser/be4b3fb9-0a23-4aaa-a823-8ac7d0085dcc
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 58: Error: Can't find profile directory.
+1686115608731	geckodriver	INFO	Listening on 127.0.0.1:53251
+1686115611782	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53252" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jack2\\AppData\\Local\\Temp\\rust_mozprofile1Ipy4n"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686115612179	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1686115612184	Marionette	INFO	Listening on port 53259
+Read port: 53259
+WebDriver BiDi listening on ws://127.0.0.1:53252
+1686115612289	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:53252/devtools/browser/e68b44ae-685b-44e5-8f55-d55827335597
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 58: Error: Can't find profile directory.
+1686115906778	geckodriver	INFO	Listening on 127.0.0.1:53355
+1686115909815	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53356" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jack2\\AppData\\Local\\Temp\\rust_mozprofilezRDexw"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686115910206	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1686115910211	Marionette	INFO	Listening on port 53363
+Read port: 53363
+WebDriver BiDi listening on ws://127.0.0.1:53356
+1686115910310	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:53356/devtools/browser/4b6f6f75-e342-4903-8203-11f33e001473
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 58: Error: Can't find profile directory.
+1686116033798	geckodriver	INFO	Listening on 127.0.0.1:53441
+1686116036836	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53442" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jack2\\AppData\\Local\\Temp\\rust_mozprofileKaJBp3"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686116037226	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1686116037230	Marionette	INFO	Listening on port 53449
+Read port: 53449
+WebDriver BiDi listening on ws://127.0.0.1:53442
+1686116037331	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:53442/devtools/browser/f355d532-520f-48d7-9f54-9cc29228cfde
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 58: Error: Can't find profile directory.
+1686116153265	geckodriver	INFO	Listening on 127.0.0.1:53546
+1686116156310	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53547" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jack2\\AppData\\Local\\Temp\\rust_mozprofileIIp127"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686116156658	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1686116156662	Marionette	INFO	Listening on port 53555
+WebDriver BiDi listening on ws://127.0.0.1:53547
+Read port: 53555
+1686116156892	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:53547/devtools/browser/d58f9361-32c0-4416-8772-b35fabd060d2
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 58: Error: Can't find profile directory.
+1686116234542	geckodriver	INFO	Listening on 127.0.0.1:53640
+1686116237592	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53641" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jack2\\AppData\\Local\\Temp\\rust_mozprofilewXbT9b"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686116237941	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1686116237945	Marionette	INFO	Listening on port 53648
+WebDriver BiDi listening on ws://127.0.0.1:53641
+Read port: 53648
+1686116238166	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:53641/devtools/browser/79eec3ea-26ab-4b3f-bc15-13e955679438
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 58: Error: Can't find profile directory.
+1686126119353	geckodriver	INFO	Listening on 127.0.0.1:58521
+1686126122404	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58522" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jack2\\AppData\\Local\\Temp\\rust_mozprofilerUmaVK"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686126122763	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1686126122767	Marionette	INFO	Listening on port 58529
+WebDriver BiDi listening on ws://127.0.0.1:58522
+Read port: 58529
+1686126122988	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:58522/devtools/browser/41da6838-d139-4073-b17b-d363b28f998c
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 58: Error: Can't find profile directory.
+1686126312287	geckodriver	INFO	Listening on 127.0.0.1:58613
+1686126315361	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58614" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jack2\\AppData\\Local\\Temp\\rust_mozprofilePrAC3f"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686126315711	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1686126315715	Marionette	INFO	Listening on port 58621
+WebDriver BiDi listening on ws://127.0.0.1:58614
+Read port: 58621
+1686126315936	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:58614/devtools/browser/ef10ae47-2943-451a-9881-38e6a8f9652c
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 58: Error: Can't find profile directory.
+1686126476707	geckodriver	INFO	Listening on 127.0.0.1:58700
+1686126479785	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58701" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jack2\\AppData\\Local\\Temp\\rust_mozprofile6p3jXi"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686126480133	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1686126480137	Marionette	INFO	Listening on port 58708
+WebDriver BiDi listening on ws://127.0.0.1:58701
+Read port: 58708
+1686126480369	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:58701/devtools/browser/359f1837-2163-449c-97b7-63e5f280e196
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 58: Error: Can't find profile directory.
+console.warn: "Listener for event 'frame' did not return a promise."
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1686126951000	geckodriver	INFO	Listening on 127.0.0.1:58922
+1686126954043	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58923" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jack2\\AppData\\Local\\Temp\\rust_mozprofilet4YNL3"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686126954389	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1686126954393	Marionette	INFO	Listening on port 58930
+WebDriver BiDi listening on ws://127.0.0.1:58923
+Read port: 58930
+1686126954618	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:58923/devtools/browser/75fa2991-c510-46a0-bdeb-27ff16d2451f
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 58: Error: Can't find profile directory.
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1686127079757	geckodriver	INFO	Listening on 127.0.0.1:59032
+1686127082800	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "59033" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jack2\\AppData\\Local\\Temp\\rust_mozprofileyl7CEl"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686127083145	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1686127083149	Marionette	INFO	Listening on port 59040
+WebDriver BiDi listening on ws://127.0.0.1:59033
+Read port: 59040
+1686127083373	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:59033/devtools/browser/248fa4da-56a1-4d83-b58b-0488598bc7ff
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 58: Error: Can't find profile directory.
+1686127184491	geckodriver	INFO	Listening on 127.0.0.1:59120
+1686127187551	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "59121" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jack2\\AppData\\Local\\Temp\\rust_mozprofileFhqSpD"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686127187916	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1686127187920	Marionette	INFO	Listening on port 59129
+WebDriver BiDi listening on ws://127.0.0.1:59121
+Read port: 59129
+1686127188154	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:59121/devtools/browser/18db6264-29ed-4f25-b2b8-532565a0e804
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 58: Error: Can't find profile directory.
+1686127312265	geckodriver	INFO	Listening on 127.0.0.1:59274
+1686127315312	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "59275" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jack2\\AppData\\Local\\Temp\\rust_mozprofileHnwarf"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686127315658	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1686127315662	Marionette	INFO	Listening on port 59282
+WebDriver BiDi listening on ws://127.0.0.1:59275
+Read port: 59282
+1686127315892	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:59275/devtools/browser/ea7039a4-8cee-428d-b4ca-65ef023d724b
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 58: Error: Can't find profile directory.
+1686129395738	geckodriver	INFO	Listening on 127.0.0.1:59523
+1686129398790	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "59524" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jack2\\AppData\\Local\\Temp\\rust_mozprofile9f0xfV"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686129399147	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1686129399151	Marionette	INFO	Listening on port 59531
+WebDriver BiDi listening on ws://127.0.0.1:59524
+Read port: 59531
+1686129399377	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:59524/devtools/browser/403df996-67db-4cf5-8e03-840ad9c30b0b
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 58: Error: Can't find profile directory.
+1686129467382	geckodriver	INFO	Listening on 127.0.0.1:59608
+1686129470455	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "59609" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jack2\\AppData\\Local\\Temp\\rust_mozprofileuf6snv"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686129470806	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1686129470810	Marionette	INFO	Listening on port 59616
+WebDriver BiDi listening on ws://127.0.0.1:59609
+Read port: 59616
+1686129471039	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:59609/devtools/browser/52f6a7ba-d0a2-4b2c-a2ee-c90e15c73d58
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 58: Error: Can't find profile directory.
+1686131664814	Marionette	INFO	Stopped listening on port 59616
+1686171330354	geckodriver	INFO	Listening on 127.0.0.1:60552
+1686171333438	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "60553" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jack2\\AppData\\Local\\Temp\\rust_mozprofileJRs0vg"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686171333932	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1686171333936	Marionette	INFO	Listening on port 60560
+Read port: 60560
+WebDriver BiDi listening on ws://127.0.0.1:60553
+1686171334066	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:60553/devtools/browser/e677f836-5b83-4552-ae27-7ef4c67d1027
+1686171340027	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1:60715
+1686171408232	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "60716" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jack2\\AppData\\Local\\Temp\\rust_mozprofilegIiXYw"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686171408708	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1686171408713	Marionette	INFO	Listening on port 60723
+WebDriver BiDi listening on ws://127.0.0.1:60716
+Read port: 60723
+1686171408851	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:60716/devtools/browser/445d6bb1-25c3-4472-ab77-38b9d99ff402
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 58: Error: Can't find profile directory.
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1686336182289	geckodriver	INFO	Listening on 127.0.0.1:62933
+1686336185342	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62934" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jack2\\AppData\\Local\\Temp\\rust_mozprofileqqD2N5"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686336186016	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1686336186022	Marionette	INFO	Listening on port 62962
+Read port: 62962
+WebDriver BiDi listening on ws://127.0.0.1:62934
+1686336186194	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:62934/devtools/browser/7ce204c5-7634-451a-a9a8-88657c14e796
+1686336192333	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 58: Error: Can't find profile directory.
+[Child 14988, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 14988, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 14988, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 14988, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 14988, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 14988, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (ConduiJavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+ || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 14988, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 14988, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 14988, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+1686336675400	Marionette	INFO	Stopped listening on port 62962
+Dynamically enable window occlusion 1
